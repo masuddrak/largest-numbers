@@ -1,12 +1,6 @@
-let numbers=[5,41,5,2];
-function oldestNumber(numbers){
-    let oldnumber=0;
-    for(let i=0; i<numbers.length; i++){
-        let elemt=numbers[i]
-        if(elemt>oldnumber){
-            oldnumber=elemt
-        }
-    }return oldnumber;
+const fibo=[0,1];
+console.log(fibo);
+for(let i=2; i<10; i++){
+    fibo[i]=fibo[i-1]+fibo[i-2];
 }
-let result=oldestNumber(numbers);
-console.log(result);
+console.log(fibo);
